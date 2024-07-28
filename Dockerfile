@@ -24,7 +24,7 @@ ARG UID=10001
 RUN adduser \
     --disabled-password \
     --gecos "" \
-    --home "/nonexistent" \
+    --no-create-home \
     --shell "/sbin/nologin" \
     --no-create-home \
     --uid "${UID}" \
